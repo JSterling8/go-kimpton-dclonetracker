@@ -211,7 +211,7 @@ func autoUpdateMessages(s *discordgo.Session) {
 				// Post if any DClones are getting close				
 				for _, serverState := range(toAlertOn) {
 					message = serverState.PrettyString() + "\nPrepare, diablo may walk sanctuary!"
-					extra := " @everyone"
+					extra := " @D2Clone_Watcher"
 					ch, _ := s.Channel(dm.ChannelID)
 					gu, _ := s.Guild(ch.GuildID)
 					for _, r := range(gu.Roles) {
